@@ -9,7 +9,7 @@ input.onButtonPressed(Button.A, function () {
 basic.forever(function () {
     if (TechnikLampe == 0) {
         pins.digitalWritePin(DigitalPin.P1, 1)
-        basic.pause(pins.analogReadPin(AnalogPin.P0) * 2)
+        basic.pause(2000)
         pins.digitalWritePin(DigitalPin.P2, 1)
     } else if (TechnikLampe == 1) {
         pins.digitalWritePin(DigitalPin.P1, 0)
